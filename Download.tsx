@@ -5,14 +5,22 @@ import 'moment/locale/zh-cn';
 
 const Download = () => (
   <>
-    <Space direction="horizontal" size={12}>
-      <DatePicker.RangePicker picker="week" locale={locale} />
-      {/* <DatePicker.RangePicker locale={locale} /> */}
+    <>
+      <Space direction="horizontal" size={12}>
+        <DatePicker.RangePicker picker="week" locale={locale} />
+        <Button>重置</Button>
+        <Button type="primary">查询</Button>
+      </Space>
+      <br />
+      <br />
+    </>
+    {/* <Space direction="horizontal" size={12}>
+      <DatePicker.RangePicker locale={locale} />
       <Button>重置</Button>
       <Button type="primary">查询</Button>
     </Space>
     <br />
-    <br />
+    <br /> */}
     <Table
       columns={[
         {
